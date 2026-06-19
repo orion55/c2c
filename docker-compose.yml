@@ -1,0 +1,18 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    image: c2c:latest
+    container_name: c2c-container
+    restart: "always"
+    volumes:
+      - ./docker/c2c.log:/app/c2c.log
+      - ./docker/.env:/app/.env
+    ports:
+      - "4000:4000"
+
+networks:
+  default:
+    driver: bridge
