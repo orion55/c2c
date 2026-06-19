@@ -4,7 +4,7 @@ export interface AsteriskRequestBody {
 }
 
 export interface IAsteriskService {
-  processingCommands: (data: any) => Promise<void>;
+  processingCommands: (data: AsteriskRequestBody) => Promise<void>;
 }
 
 export type BadFields = Partial<Record<'user' | 'client', string>>;
