@@ -1,0 +1,15 @@
+services:
+  app:
+    image: ghcr.io/orion55/c2c:latest
+    pull_policy: always
+    container_name: c2c-container
+    restart: "always"
+    volumes:
+      - ./docker/c2c.log:/app/c2c.log
+      - ./docker/.env:/app/.env
+    ports:
+      - "4000:4000"
+
+networks:
+  default:
+    driver: bridge
