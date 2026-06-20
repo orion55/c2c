@@ -1,8 +1,5 @@
 import net from 'node:net';
-import type {
-  AsteriskRequestBody,
-  IAsteriskService
-} from '@src/asterisk/asterisk.types';
+import type { AsteriskRequestBody, IAsteriskService } from '@src/asterisk/asterisk.types';
 import { buildAction, generateActionId } from '@src/asterisk/asterisk.util';
 import type { IConfigService } from '@src/config/config.interface';
 import type { ILogger } from '@src/logger/logger.interface';
