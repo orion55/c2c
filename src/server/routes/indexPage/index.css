@@ -106,8 +106,16 @@ body {
   place-items: center;
   background: var(--surface);
   color: var(--accent);
-  font-size: 25px;
-  font-weight: 800;
+}
+
+.arrow-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .call-button {
