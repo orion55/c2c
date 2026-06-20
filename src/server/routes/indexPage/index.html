@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C2C-звонок</title>
+  <link rel="stylesheet" href="/index.css" />
+  <script src="/index.js" defer></script>
+</head>
+<body>
+  <main class="page-main">
+    <section class="call-panel" aria-labelledby="page-title">
+      <p class="eyebrow">Демо C2C</p>
+      <h1 class="page-header">Быстрый звонок клиенту</h1>
+      <div class="route">
+        <div class="party">
+          <span class="party-label">Оператор</span>
+          <strong class="party-number">1001</strong>
+        </div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="party">
+          <span class="party-label">Клиент</span>
+          <strong class="party-number">1002</strong>
+        </div>
+      </div>
+
+      <button class="call-button" type="button" id="call-button">Позвонить</button>
+      <p class="status" id="call-status" role="status" aria-live="polite">
+        Готово к запуску звонка.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
